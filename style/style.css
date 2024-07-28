@@ -517,3 +517,8 @@ display: flex;
     color: #89b4d9;
     font-size: 0.8rem;
 }
+@media(max-width:800px){
+    body{
+display: none;
+    }
+}
