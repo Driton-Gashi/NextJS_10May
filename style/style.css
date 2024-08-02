@@ -106,6 +106,7 @@ header .menu li a{
 .top-section-left,.top-section-right{
     width: 100%;
 }
+
 .top-section-right{
     display: flex;
     align-items: center;
@@ -517,8 +518,100 @@ display: flex;
     color: #89b4d9;
     font-size: 0.8rem;
 }
-@media(max-width:800px){
-    body{
-display: none;
+.mobileImage{
+    display: none;
+}
+
+@media(max-width:1024px){
+    .container{
+        padding: 0 2rem;
+    }
+    header .container{
+        padding: 0;
+    }
+    .top-section-left img{
+        width: 100%;
+    }
+    .go{
+        padding: 0.6rem;
+    }
+    .search-wrapper{
+        padding: 0.4rem 0.8rem;
+
+    }
+    .search-wrapper-element input{
+        padding: 0.3rem;
+    }
+
+    .navigation-section ul li a{
+        padding: 1rem 0.5rem;
+        font-size: 0.9rem;
+    }
+    .bottom-section h2{
+        width: auto;
+    }
+    .second-section-first-row h2{
+        font-size: 1.2rem;
+    }
+    .second-section-second-row-header h2{
+        font-size: 1.2rem;
+    }
+    .comment{
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width:768px){
+    .second-section-first-row{
+        flex-wrap: wrap;
+    }
+    header .menu li{
+        padding: 0.9rem;
+    }
+    .container{
+        padding: 0 1rem;
+    }
+    .top-section,.top-section-right,.second-section-second-row,header .menu,.second-section-third-row,.afterFooter ul{
+        flex-direction: column;
+    }
+    .search-wrapper,.donate{
+        width: 100%;
+    }
+    .top-section-left img{
+        width: 50%;
+    }
+    .top-section-left{
+        justify-content: center;
+        display: flex;
+    }
+    .navigation-section{
+        display: none;
+    }
+    .desktopImage{
+        display: none;
+    }
+    .mobileImage{
+        display: block;
+        margin-top: 1rem;
+    }
+    .blueSection-right{
+        display: none;
+    }
+    .blueSection-left{
+        width: 100%;
+    }
+    .footer-firstRow{
+        flex-wrap: wrap;
+    }
+    .footerMenu{
+        list-style-type: none;
+    width: 33.33%;
+    }
+    .afterFooter ul li{
+        text-align: center;
+    }
+    .copyright{
+        padding: 1rem;
+        text-align: center;
     }
 }
